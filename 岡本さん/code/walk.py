@@ -60,7 +60,7 @@ with open(filename) as f: #ｘ軸,y軸,z軸の値を配列に格納
         accX.append(float(row[1]))
         accY.append(float(row[2]))
         accZ.append(float(row[3]))
-        
+
 #3軸それぞれの加速度の平均を計算
 sumX:float = 0
 sumY:float = 0
@@ -96,7 +96,7 @@ for walk in zip(accX, accY, accZ):
     com = math.sqrt(accX[index] * accX[index] + accY[index] * accY[index] + accZ[index] * accZ[index])
     acc.append(com)
     index += 1
-    
+
 acc_str = [str(n) for n in acc]
 
 with open('data_{0}Hz.csv'.format(Hz), 'w',newline='\n') as file:
@@ -128,7 +128,7 @@ accDif = []
 for dif in acc[:-1]:
     accDif.append(math.fabs(acc[index + 1]*100000 - acc[index]*100000))
     index += 1
-    
+
 #リストを昇順にソート
 accDif.sort()
 
@@ -140,9 +140,8 @@ accDif_str = [str(n) for n in accDif]
 with open('data_100Hz_walk_Dif_kaggle_{0}.csv'.format(number), 'w',newline='\n') as file:
     for x in accDif_str:
       file.write(x + "\n")
-      
-          
-           
+
+
 def KLD(a, b, bins=10000, epsilon=.00001):
     min_a = min(a)
     min_b = min(b)
@@ -152,13 +151,13 @@ def KLD(a, b, bins=10000, epsilon=.00001):
     min_value=min(min_a,min_b)
     max_value=max(max_a,max_b)
     # サンプルをヒストグラムに, 共に同じ数のビンで区切る
-    a_hist, _ = np.histogram(a, range = (min_value, max_value), bins=bins) 
+    a_hist, _ = np.histogram(a, range = (min_value, max_value), bins=bins)
     b_hist, _ = np.histogram(b, range = (min_value, max_value), bins=bins)
-    
+
     # 合計を1にするために全合計で割る
     a_hist = (a_hist+epsilon)/np.sum(a_hist)
     b_hist = (b_hist+epsilon)/np.sum(b_hist)
-    
+
     # 本来なら a の分布に0が含まれているなら0, bの分布に0が含まれているなら inf にする
     return np.sum([ai * np.log(ai / bi) for ai, bi in zip(a_hist, b_hist)])
 
@@ -178,8 +177,8 @@ print('50Hz_3(df13): ', KLD(test, df13))
 print('10Hz_1(df14): ', KLD(test, df14))
 print('10Hz_2(df15): ', KLD(test, df15))
 print('10Hz_3(df16): ', KLD(test, df16))
-      
-print('50Hz_4(df17): ', KLD(test, df17)) 
+
+print('50Hz_4(df17): ', KLD(test, df17))
 
 print('100Hz_1(df21): ', KLD(test, df21))
 print('100Hz_2(df22): ', KLD(test, df22))
@@ -230,19 +229,8 @@ for var in accX:
     sumX = sumX + squX
     index += 1
     print(sumX)
-    
+
 
 varX = sumX / index
 print(varX)
 '''
-
-
-
-
-
-
-
-
-
-
-
