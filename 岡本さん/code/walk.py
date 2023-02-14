@@ -120,7 +120,7 @@ acc_str = [str(n) for n in acc]
 
 with open('data_{0}Hz_walk.csv'.format(Hz), 'w',newline='\n') as file:
     for x in acc_str:
-      file.write(x + "\n")
+        file.write(x + "\n")
 
 #差分をとる
 index = 0
