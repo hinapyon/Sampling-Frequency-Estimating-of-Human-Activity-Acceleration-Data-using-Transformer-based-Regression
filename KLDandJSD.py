@@ -36,8 +36,8 @@ def divide_filename_and_Hz(filename_and_Hz: list[int, str]) -> tuple[list[int], 
     Hz = []
     filename = []
     for row in filename_and_Hz:
-      Hz.append(row[0])
-      filename.append(row[1])
+        Hz.append(row[0])
+        filename.append(row[1])
 
     return Hz, filename
 
