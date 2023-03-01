@@ -2,6 +2,7 @@
 all_walk_data
 my_walk_data
 previous_walk_data
+experiment_data
 previous_research
 .ipynb_checkpoints
 .gitignore
