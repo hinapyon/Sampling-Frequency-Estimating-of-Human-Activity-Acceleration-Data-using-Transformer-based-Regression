@@ -1,4 +1,7 @@
 .DS_Store
-data
+all_walk_data
+my_walk_data
+previous_walk_data
+previous_research
 .ipynb_checkpoints
 .gitignore
