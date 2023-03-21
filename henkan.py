@@ -2,7 +2,7 @@ import os
 import shutil
 
 # 元のフォルダのパス
-root_path = "/Users/hinase/Desktop"
+root_path = "/Users/hinase/Downloads/oko"
 
 # 新しいフォルダのパス
 new_path = "/Users/hinase/CodeChord/サンプリング周波数推定/all_walk_data"
