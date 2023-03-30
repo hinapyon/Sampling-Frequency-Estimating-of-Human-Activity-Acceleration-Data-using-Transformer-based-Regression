@@ -15,5 +15,7 @@ for foldername, subfolders, filenames in os.walk(root_path):
             new_filename = filename.replace("mem-", "walk")
             src_path = os.path.join(foldername, filename)
             dst_path = os.path.join(new_path, new_filename)
+            #dst_path2 = os.path.join(new_path2, new_filename)
             shutil.move(src_path, dst_path)
+            #shutil.move(src_path, dst_path2)
             shutil.rmtree(os.path.join(root_path, foldername))
