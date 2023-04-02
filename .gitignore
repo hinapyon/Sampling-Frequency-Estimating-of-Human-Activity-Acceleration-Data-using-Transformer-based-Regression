@@ -4,5 +4,6 @@ my_walk_data
 experiment_data
 previous_research
 my_walk_data(only_3classes)
+my_walk_data(recent_2set)
 .ipynb_checkpoints
 .gitignore
