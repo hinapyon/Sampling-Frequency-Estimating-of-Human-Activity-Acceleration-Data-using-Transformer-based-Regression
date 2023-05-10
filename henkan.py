@@ -5,7 +5,7 @@ import shutil
 root_path = "/Users/hinase/Downloads/oko"
 
 # 新しいフォルダのパス
-new_path = "/Users/hinase/CodeChord/サンプリング周波数推定/all_walk_data"
+new_path = "/Users/hinase/CodeChord/サンプリング周波数推定/my_walk_data(100Hz15minutes)"
 #new_path2 = "/Users/hinase/CodeChord/サンプリング周波数推定/my_walk_data"
 
 # "mem"から"walk"に変換してファイルを新しいフォルダに移動
