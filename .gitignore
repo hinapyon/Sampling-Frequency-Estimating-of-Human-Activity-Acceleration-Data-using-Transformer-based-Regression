@@ -8,6 +8,7 @@ my_walk_data(recent_2set)
 my_walk_data(20minutes)
 my_walk_data(100Hz)
 my_walk_data(100Hz15minutes)
+my_walk_data(100Hz15minutesTo20seconds)
 hasc
 .ipynb_checkpoints
 .gitignore
