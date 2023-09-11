@@ -2,8 +2,8 @@ import os
 import pandas as pd
 
 # ディレクトリ内のCSVファイルを取得
-directory_path = 'my_walk_data(100Hz15minutes)'  # ディレクトリのパスを指定してください
-output_directory = 'new_data'  # 出力ディレクトリのパスを指定してください
+directory_path = 'new_data'  # ディレクトリのパスを指定してください
+output_directory = 'my_walk_data(100Hz15minutesTo20seconds)'  # 出力ディレクトリのパスを指定してください
 
 # ディレクトリ内のCSVファイルをリストアップ
 csv_files = [file for file in os.listdir(directory_path) if file.endswith('.csv')]
