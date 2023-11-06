@@ -1,12 +1,5 @@
 .DS_Store
 previous_research
-my_walk_data(100Hz15minutes)
-my_walk_data(100Hz15minutesTo20seconds)
-hasc(walk)
-new_hasc(walk)
-NR
-NL
-SR
-SL
+datasets
 .ipynb_checkpoints
 .gitignore
